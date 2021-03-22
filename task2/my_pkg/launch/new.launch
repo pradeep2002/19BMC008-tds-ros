@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch> 
+
+<node   name="two_ints_publisher"
+        pkg="my_pkg"
+        type="publisher_two_ints.py"
+        args=""
+        output="screen"/>
+
+<node   name="custom_listener"
+        pkg="my_pkg"
+        type="listener.py"
+        args=""
+        output="screen"/>
+
+
+<node   name="output_listener"
+        pkg="my_pkg"
+        type="num_pub.py"
+        args=""
+        output="screen"/>
+
+
+</launch>
